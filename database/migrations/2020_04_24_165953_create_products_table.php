@@ -20,6 +20,7 @@ class CreateProductsTable extends Migration
             $table->double("price",2);
             $table->integer("stock");
             $table->double("discount",2);
+            $table->integer("user_id")->unsigned()->index();
             $table->timestamps();
         });
     }
